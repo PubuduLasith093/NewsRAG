@@ -42,3 +42,6 @@ streamlit run app.py
 ---
 ## 5. 🧱 Architecture
 ![App Screenshot](images/arc.png)
+---
+## 6. 🧱 Enhanced Architecture
+![App Screenshot](images/enhanced_arc.png)
