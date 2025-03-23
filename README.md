@@ -39,3 +39,6 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+---
+## 5. 🧱 Architecture
+![App Screenshot](images/arc.png)
