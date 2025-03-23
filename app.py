@@ -8,13 +8,13 @@ from SRC.pipeline.semantic_topic_grouping import run_semantic_grouping
 from SRC.pipeline.zero_shot_topic_clustering import zeroshot_topic_clustering
 from SRC.pipeline.highlight_news import run_highlight
 
-st.set_page_config(page_title="News MAS Pipeline", page_icon="🗞️", layout="centered")
+st.set_page_config(page_title="Aussie News Pipeline", page_icon="🗞️", layout="centered")
 
 st.title("🧠 Welcome to Aussie News – Your Daily AI-Powered News Assistant")
 st.sidebar.success("Choose a page to get started!")
 MONGO_URI = os.getenv("MONGO_URI")
 mongo_client = MongoClient(MONGO_URI)
-# st.title("🧠 News MAS: Run Full Pipeline")
+# st.title("🧠 News Aussie: Run Full Pipeline")
 
 if st.button("🚀 Run End-to-End Pipeline"):
     with st.spinner("Fetching and processing news... this may take a few minutes"):

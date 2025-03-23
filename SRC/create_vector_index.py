@@ -6,7 +6,7 @@ load_dotenv()
 MONGO_URI = os.getenv("MONGO_URI")
 client = MongoClient(MONGO_URI)
 
-# Replace with your DB and collection
+# RMongo DB collection
 db = client["news_data"]
 collection = db["articles"]
 

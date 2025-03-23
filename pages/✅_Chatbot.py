@@ -1,5 +1,5 @@
 import streamlit as st
-from rag_pipeline import rag_answer_question
+from SRC.rag_pipeline import rag_answer_question
 
 st.set_page_config(page_title="Ask the News", layout="centered")
 st.title("💬 Ask the NewsBot")
@@ -9,7 +9,7 @@ query = st.text_input(
     "Type your question", placeholder="e.g., What's happening in the finance sector?"
 )
 if query:
-    with st.spinner("Thinking..."):
+    with st.spinner("Retreiving..."):
         answer, sources = rag_answer_question(query)
         st.success(answer)
         st.markdown("### 📰 Sources")

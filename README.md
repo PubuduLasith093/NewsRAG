@@ -45,3 +45,6 @@ streamlit run app.py
 ---
 ## 6. 🧱 Enhanced Architecture
 ![App Screenshot](images/enhanced_arc.png)
+---
+## 7. 🧱 ML/DL Architecture (news classification/ clustring or fake news classification)
+![App Screenshot](images/ML_DL_arc.png)
