@@ -18,7 +18,7 @@ def fetch_latest_news(
     Fetch the latest news articles from the NewsData.io API for specified countries.
 
     Args:
-        api_key (str): Your NewsData.io API key.
+        api_key (str): NewsData.io API key.
         countries (List[str], optional): List of country codes (e.g. ["au", "us"]).
                                          Defaults to None (which uses ["au", "us"]).
         language (str, optional): News language code (e.g. 'en' for English).
@@ -27,7 +27,7 @@ def fetch_latest_news(
         page_size (int, optional): Number of articles per page, if supported by the API.
                                    Defaults to 10.
         timeframe (int, optional): Search the news articles for a specific timeframe (Minutes and Hours).
-                                   For hours, you can set a timeframe of 1 to 48, and for minutes, you
+                                   For hours, can set a timeframe of 1 to 48, and for minutes, 
                                    can define a timeframe of 1m to 2880m.
 
     Returns:
@@ -40,7 +40,7 @@ def fetch_latest_news(
     if countries is None:
         countries = ["au"]  # default to Australia
 
-    # Construct the base URL using your parameters.
+    # Construct the base URL using parameters.
     # Refer to https://newsdata.io/docs for additional query parameters if needed.
     base_url = "https://newsdata.io/api/1/latest"
 
@@ -54,7 +54,7 @@ def fetch_latest_news(
         # "language": language,
         # "page": page,
         # Note: Some fields like 'page_size' may not be directly supported by this API,
-        # but we'll keep it here if you need to adapt for a different endpoint or if
+        # but we'll keep it here if  need to adapt for a different endpoint or if
         # the API eventually supports it.
         # "page_size": page_size,
         # "timeframe": timeframe,
@@ -87,7 +87,7 @@ def fetch_latest_news(
 def example_usage():
     """
     Example usage of the fetch_latest_news function.
-    Replace 'YOUR_API_KEY' with your actual key before running.
+    Replace 'API_KEY' with actual key before running.
     """
     NEWSIO_API_KEY = os.getenv("NEWSDATA_IO_API_KEY")
     try:
