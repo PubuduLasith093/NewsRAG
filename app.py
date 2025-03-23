@@ -10,7 +10,7 @@ from SRC.pipeline.highlight_news import run_highlight
 
 st.set_page_config(page_title="News MAS Pipeline", page_icon="🗞️", layout="centered")
 
-st.title("🧠 Welcome to NewsMAS – Your Daily AI-Powered News Assistant")
+st.title("🧠 Welcome to Aussie News – Your Daily AI-Powered News Assistant")
 st.sidebar.success("Choose a page to get started!")
 MONGO_URI = os.getenv("MONGO_URI")
 mongo_client = MongoClient(MONGO_URI)
